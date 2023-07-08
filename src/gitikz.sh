@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git log --pretty=%h»¦«%s»¦«%aN»¦«%aE»¦«%aD -n 5 | lines | split column "»¦«" commit subject name email date > git.log
+git log --graph --oneline
 
 # run file to create and save
 # delete initial log file
